@@ -18,45 +18,37 @@ html {
 }
 
 body {
-  height: 100vh;
+  min-height: 100vh;
   font-family: "Outfit", sans-serif;
   background-color: var(--color-slate-300);
   display: flex;
-  justify-content: center; /* center horizontally */
-  align-items: center; /* center vertically */
+  justify-content: center; 
+  align-items: center; 
 }
 
-.qr-card{
-  width: 21.33rem;
-  height: 33.267rem;
+.card{
+  max-width: 21.33rem;
   background-color: var(--color-white);
   border-radius: 20px;
   box-shadow: 0 25px 25px rgba(00, 00, 00, 0.0477);
 }
 
-.card-header {
-  width: 19.2rem;
-  height: 19.2rem;
-  margin: 1.067rem 1.067rem 1.6rem 1.067rem; /* top right bottom left */
-  overflow: hidden; /* Hides any content that exceeds the boundaries of the element */
+.qr-code {
+  max-width: 19.2rem;
+  margin: 1.067rem 1.067rem 1.6rem 1.067rem;
   border-radius: 10px
 }
 
-.qr-code {
-  width: 100%;
-  height: 100%;
-}
-
 .supporting-text {
-  width: 19.2rem;
-  height: 8.73rem;
-  margin: 1.6rem 1.067rem 2.67rem 1.067rem;
+  max-width: 19.2rem;
+  margin: 0 1.067rem 2.667rem 1.067rem;
 }
 
 h1 {
   font-size: 1.467rem;
   font-weight: 700;
   line-height: 120%;
+  letter-spacing: 0;
   text-align: center;
   color: var(--color-slate-900);
   margin:0 1.067rem 1.067rem 1.067rem;
@@ -68,6 +60,6 @@ p {
   line-height: 140%;
   letter-spacing: 0.2px;
   text-align: center;
-  margin: 1.067rem 1.067rem 0 1.067rem;
   color: var(--color-slate-500);
+  margin: 0 1.067rem 0 1.067rem;
 }
